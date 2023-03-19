@@ -31,7 +31,7 @@ passport.use(new LocalStrategy(async (username, password, done) => {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://127.0.0.1:3000/auth/google/callback",
+    callbackURL: "https://blog-webapp-hoc5.onrender.com/auth/google/callback",
 }, (accessToken, refreshToken, user, done) => {
     // console.log(accessToken);
     // console.log(user);
