@@ -1,0 +1,95 @@
+/*.kebab-menu */
+
+.menu{
+    justify-self: end;
+    position: relative;
+}
+
+.kebab-menu{
+    background: none;
+    border: none;
+    transform: translateY(20%);
+    padding: 1rem;
+}
+
+.kebab-menu .dot, .kebab-menu .dot::before, .kebab-menu .dot::after{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.kebab-menu .dot::before{
+    content: "";
+    position: absolute;
+    transform: translateY(-200%); 
+
+}
+
+.kebab-menu .dot::after{
+    content: "";
+    position: absolute;
+    transform: translateY(200%); 
+
+}
+
+
+
+.kebab-menu:hover{
+    cursor: pointer;
+}
+
+
+/* dropdown */
+
+
+.dropdown{
+    background-color: #fff;
+    /* padding: 2rem 2.5rem; */
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+   
+    position: absolute;
+    left: 0;
+}
+
+.dropdown-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+}
+
+.dropdown-links a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-links :is(a, button){
+    font-weight: 500;
+    width: 100%;
+    padding: 1.25rem 2.5rem;
+  
+}
+.dropdown-links button{
+    background: none;
+    border: none;
+}
+
+.dropdown-links :is(a, button):hover{
+    background-color: #eee;
+}
+
+/*  dropdown effect  */
+
+.dropdown{
+    transition: transform 300ms;
+    transform-origin: top right;
+}
+
+.dropdown[data-visible="false"]{
+    transform: scaleY(0%) translate(-80%, 30%);
+}
+.dropdown[data-visible="true"]{
+    transform: scaleY(100%) translate(-80%, 30%);
+}

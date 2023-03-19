@@ -1,0 +1,21 @@
+
+<form action="/" method="GET" class="mb-5">
+    <div class="d-flex gap-3">
+        <input type="text" name="search-query" value="<%= search %>" class="form-control">
+        <button class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<% for(let article of articles){ %>
+    <article class="card mt-4">
+        <div class="card-body">
+            <p class="card-subtitle mb-2"><a href="user/<%= article.user.username %>" class="link"><span class="h6"><%= article.user.name %></span></a> . <span class="text-muted"><%= article.createdAt.toLocaleString('en-US', {day: 'numeric', month: 'short', year: 'numeric'}) %></span></p>
+            <div>
+                <a href="/articles/<%= article.slug %>" class="link">
+                    <h2 class="title h3"><%= article.title %></h2>
+                    <p class="card-text"><%= article.description %></p>
+                </a>
+            </div>
+        </div>
+    </article>
+<% } %>

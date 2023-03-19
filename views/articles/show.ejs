@@ -1,0 +1,35 @@
+<article class="blog-post">
+
+    <div class="grid grid-2-col">
+        <h1 class="display-6 ">
+            <%= article.title %>
+        </h1>
+
+        <% if(showMenu){ %>
+            <div class="menu">
+                <button class="kebab-menu" aria-controls="menu" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="dot"></span>
+    
+                </button>
+                <div class="dropdown" data-visible="false">
+                    <ul class="dropdown-links">
+                        <li><a href="/articles/<%= article.id %>/edit" class="text-primary">Edit</a></li>
+                        <li>
+                            <form action="/articles/<%= article.id %>?_method=DELETE" method="POST">
+                                <button class="text-danger">Delete</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <% } %>
+        
+
+    </div>
+    <p class="text-muted mb-4"><%= article.createdAt.toLocaleString("en-US", {day: 'numeric', month: 'short', year: 'numeric'}) %></p>
+    <p><%- article.htmlContent %></p>
+
+
+</article>
+

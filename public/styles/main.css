@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import 'kebab-menu.css';
+
+:root{
+    --header-text: #ededed;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* footer always at the end */
+main{
+    flex-grow: 1;  
+}
+
+
+.logo{
+    font-size: 1.825rem;
+    color: var(--header-text);
+    margin: 1rem 2rem;
+}
+
+
+.card-text{
+    font-family: 'Roboto Slab', serif;
+    /* font-size: 1.05rem; */
+    letter-spacing: 1.5px;
+}
+
+.primary-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links :is(li, a){  
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--header-text);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.nav-links a:hover{
+    border-bottom: var(--header-text) 1.4px solid;
+}
+
+.blog-post{
+    max-width: 100ch;
+    margin: 0 auto;
+}
+
+.blog-post p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    letter-spacing: 1.25px;
+    line-height: 1.6;
+}
+
+
+.primary-footer{
+    height: 20px;
+    
+}
+
+/*  */
+
+.title{
+    letter-spacing: -0.6px;
+}
+
+.link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-form-sm{
+    /* width: 80%; */
+    max-width: 500px;
+    margin: 4rem auto;
+}
+
+/* grid */
+
+.grid{
+    display: grid;
+}
+
+.grid-2-col{
+    grid-template-columns: 1fr .1fr;
+}
+
+
+/*  */
+
+.sr-only{
+    position: absolute;
+    left: -10000px;
+}
