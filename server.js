@@ -67,7 +67,7 @@ app.use(passport.session());
 
 
 app.use('/', require('./src/routes/index'));
-app.use('/signup', require('./src/routes/account/signUp'));
+app.use('/signup', require('./src/routes/account/signup'));
 app.use('/auth/login', require('./src/routes/account/login'));
 app.use('/auth/google', require('./src/routes/account/google'));
 app.use('/logout', require('./src/routes/account/logout'));
