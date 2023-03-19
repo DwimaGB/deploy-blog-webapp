@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js",
+    "build": "npm install && npm run build-app",
+    "build-app": "babel src -d dist"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +34,9 @@
     "slugify": "^1.6.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
     "nodemon": "^2.0.21"
   }
 }
