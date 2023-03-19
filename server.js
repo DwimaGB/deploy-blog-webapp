@@ -37,7 +37,7 @@ app.use(helmet());
 app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["self"],
-        scriptSrc: ["self", "https://cdn.jsdelivr.net", "https://127.0.0.1:3000/scripts/script.js"],
+        scriptSrc: ["self", "https://cdn.jsdelivr.net", "https://blog-webapp-hoc5.onrender.com/scripts/script.js"],
     }
     
 }))
