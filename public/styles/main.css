@@ -78,6 +78,16 @@ main{
 
 /*  */
 
+.card-body-google{
+    padding: 0.5rem 1rem;
+}
+
+.social-icon{
+    margin: 0;
+}
+
+/*  */
+
 .title{
     letter-spacing: -0.6px;
 }
