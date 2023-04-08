@@ -95,3 +95,9 @@ main{
     position: absolute;
     left: -10000px;
 }
+
+@media only screen and (min-width: 992px){
+    .navbar .navbar-nav{
+        margin-top: 0 !important;
+    }
+}
