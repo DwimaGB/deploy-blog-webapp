@@ -33,31 +33,6 @@ main{
     letter-spacing: 1.5px;
 }
 
-.primary-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links :is(li, a){  
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--header-text);
-}
-
-.nav-links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem 2rem;
-}
-
-.nav-links a:hover{
-    border-bottom: var(--header-text) 1.4px solid;
-}
-
 .blog-post{
     max-width: 100ch;
     margin: 0 auto;

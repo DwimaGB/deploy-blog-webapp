@@ -1,10 +1,24 @@
-<header class="primary-header bg-secondary mb-5">
-    <p class="logo">BLOG</p>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/auth/login" class="btn btn-dark">Login</a></li>
-            <li><a href="/signup" class="btn btn-warning text-dark">Sign Up</a></li>
-        </ul>
-    </nav>
+
+<header class="sticky-top mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">BLOG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="flex-grow: 0;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex gap-3 mt-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/auth/login" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="/signup" class="btn btn-warning text-dark">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>

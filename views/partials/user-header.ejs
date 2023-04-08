@@ -1,15 +1,29 @@
-<header class="primary-header bg-secondary mb-5">
-    <p class="logo">BLOG</p>
-    <nav class="primary-navigation">
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/articles/new">New Article</a></li>
-            <li><a href="/articles">My Articles</a></li>
-            <li>
+
+<header class="sticky-top mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">BLOG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="flex-grow: 0;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex gap-3 mt-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/articles/new" class="nav-link">New Article</a>
+              </li>
+              <li class="nav-item">
+                <a href="/articles" class="nav-link">My Articles</a>
+              </li>
+              <li class="nav-item">
                 <form action="/logout" method="POST">
                     <button class="btn btn-danger">Logout</button>
                 </form>
             </li>
-        </ul>
-    </nav>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
